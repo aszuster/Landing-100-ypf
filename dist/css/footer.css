@@ -1,0 +1,370 @@
+
+/********************************** NEW FOOTER DISEÑO *************************************/
+
+.footer-principal {
+    width: auto;
+    display: block;
+    background: #1d1d1d;
+    padding: 25px 0 30px 0;
+    font-size: 13px;
+    color: #fff;
+    font-family: "din-medium";
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-principal .margen-primer-span {
+    /*padding: 20px 0 0 0;*/
+}
+
+.footer-principal .linksFooter
+{
+    display: inline;
+}
+
+.footer-principal span {
+    display: block;
+    line-height: 19px;
+}
+
+.footer-principal a {
+    color: #858585;
+    text-decoration: none;
+}
+
+.footer-principal a:hover {
+    color: #4c4c4c;
+}
+
+.footer-principal strong {
+    color: #fff;
+    font-family: "din-black";
+    font-weight: 400;
+    display: block;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 20px 0 0 0;
+}
+
+.footer-principal strong a {
+    color: #fff;
+}
+
+.footer-principal strong a:hover {
+    color: #b4b4b4;
+}
+
+.footer-principal .items-footer strong {
+    padding: 0 0 20px 0;
+}
+
+.footer-principal .redes-footer strong {
+    padding: 10px 0;
+}
+
+.footer-principal .tit {
+    /*padding: 20px 0 0 0;*/
+}
+
+.footer-principal .fin-grupo {
+    padding-bottom:20px;
+}
+
+.footer-principal .strongClass {
+    padding: 0 0 20px 0;
+    color: #fff;
+    font-family: "din-black";
+    font-weight: 400;
+    display: block;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.footer-principal .strongClass a{
+    color: #FFF;
+}
+
+.footer-principal .tit a {
+    color: #CFCFCF;
+    font-family: "din-black";
+}
+
+.footer-principal .tit a:hover {
+    color: #868686
+}
+
+.footer-principal span a.bold {
+    font-family:"din-black";
+}
+
+.footer-principal .foot-logo {
+    background: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/ypf-footer.png") no-repeat center center !important;
+    width: 128px;
+    height: 32px;
+    display: block;
+    margin: 20px 0 30px 0;
+}
+
+.footer-principal .suscript {
+    display: block;
+    position: relative;
+}
+
+.footer-principal input.news {
+    background: #545353;
+    border: none;
+    width: 220px;
+    padding: 10px 0;
+    text-indent: 10px;
+    color: #fff; 
+    font-family: "din-medium";
+    margin-bottom: 10px;
+    height: 19px;
+    border-right: 40px solid #545353;
+}
+
+.footer-principal .suscript button {
+    background: url("./assets/head-foot/ic-mail-foot.png") no-repeat scroll center center;
+    border: medium none;
+    height: 38px;
+    padding: 0;
+    position: absolute;
+    width: 30px;
+    margin-left: -34px;
+}
+
+.footer-principal .open-foot {
+    padding: 10px 0;
+}
+
+.footer-principal .open-foot li > div {
+    display: none;
+}
+
+.footer-principal .open-foot li span {
+    color: #858585;
+    line-height: 19px;
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0 30px 0 0;
+    background: url('https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/submenu-arrow-foot-off.png') right center no-repeat;
+}
+
+.footer-principal .open-foot .redSocial-link {
+    color: #858585;
+    line-height: 19px;
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0 30px 0 0;
+    background: url('https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/submenu-arrow-foot-off.png') right center no-repeat;
+}
+
+.footer-principal .open-foot .redSocial-link span {
+    display: none;   
+}
+
+.footer-principal .open-foot li span span {
+    display: none;
+}
+
+.footer-principal .open-foot li span.ui-state-active {
+    background: url('https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/submenu-arrow-foot-on.png') right center no-repeat;
+}
+
+.footer-principal .open-foot li a.ui-state-active {
+    background: url('https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/submenu-arrow-foot-on.png') right center no-repeat;
+}
+
+.footer-principal .open-foot li.opened-item > div {
+    display: block;
+}
+
+.footer-principal .social-media {
+    padding: 10px 0;
+}
+
+.footer-principal .social-media a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 37px;
+    height: 37px;
+    /*background: url('./assets/head-foot/ic-redes-foot.png') no-repeat;*/
+    text-indent: -999999px;
+    margin-right: 20px;
+}
+
+.footer-principal .social-media a {
+    background-position: 0 0;
+}
+
+.footer-principal .social-media a:hover {
+    background-position: 0 -37px !important;
+}
+
+/*.footer-principal .social-media a.fb {
+    background-position: 0 0;
+}
+
+.footer-principal .social-media a.tw {
+    background-position: -63px 0;
+}
+.footer-principal .social-media a.gp {
+    background-position: -128px 0;
+}
+
+.footer-principal .social-media a.it {
+    background-position: -192px 0;
+}
+
+.footer-principal .social-media a.py {
+    background-position: -257px 0;
+}
+
+.footer-principal .social-media a.pt {
+    background-position: -321px 0;
+}
+.footer-principal .social-media a.fb:hover {
+    background-position: 0 -37px;
+}
+
+.footer-principal .social-media a.tw:hover {
+    background-position: -63px -37px;
+}
+
+.footer-principal .social-media a.gp:hover {
+    background-position: -128px -37px;
+}
+
+.footer-principal .social-media a.it:hover {
+    background-position: -192px -37px;
+}
+
+.footer-principal .social-media a.py:hover {
+    background-position: -257px -37px;
+}
+
+.footer-principal .social-media a.pt:hover {
+    background-position: -321px -37px;
+}*/
+
+.footer-principal .copy {
+    padding: 40px 0 0 0;
+    font-size: 11px;
+    color: #666;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer-principal .copy a {
+    color: #666;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0 0 0 0px;
+}
+
+.footer-principal .mob-foot {
+    display: none;
+}
+
+.footer-principal .mob-foot .copy {
+    padding: 0;
+    text-align: center;
+}
+
+.footer-principal .mob-foot .copy a {
+    color: #666;
+    margin: 0;
+}
+
+.footer-principal .mob-foot .social-media {
+    margin: 0 auto;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 180px;
+}
+
+.footer-principal .mob-foot .social-media a {
+    margin: 0 10px 20px 10px;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+/********************************************/
+
+/* RESPONSIVE */
+
+@media (max-width: 1023px) {
+    .footer-principal .desck-foot {
+        display: none;
+    }
+    .footer-principal .mob-foot {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1999px) {
+  
+  .smartFooter .social-media a
+  {
+      margin-right: 11px;
+  }
+  
+}
+
+
+
+/* FOOTER NUEVO REDES */
+
+.footer__dropdown-links-container {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.5s ease;
+}  
+.footer__dropdown-links-container.active {
+    height: auto;
+    max-height: 5rem;
+} 
+.footer__dropdown-link {
+    margin-right: 1rem;
+} 
+.footer__dropdown-linkL:last-child {
+    margin: 0;
+} 
+.footer__dropdown-button.active {
+    transform: rotate(90deg);
+}
+
+.footer__dropdown-title {
+    color: #858585;
+    line-height: 19px;
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0 30px 0 0;
+    margin-bottom: 5px;
+
+    font-size: 15px!important;
+}
+.footer__dropdown-button {
+    background-color: transparent;
+    border: 0;
+}
+.footer__dropdown-button img {
+    width: 6px;
+}
+#ltrRedesSocialesTitulo {
+    margin-bottom: 10px;
+}

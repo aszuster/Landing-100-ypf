@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DINLight';
+    src: url('fonts/DINLight.eot');
+    src: url('fonts/DINLight.eot') format('embedded-opentype'),
+         url('fonts/DINLight.woff2') format('woff2'),
+         url('fonts/DINLight.woff') format('woff'),
+         url('fonts/DINLight.ttf') format('truetype'),
+         url('fonts/DINLight.svg#DINLight') format('svg');
+}

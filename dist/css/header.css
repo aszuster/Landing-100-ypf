@@ -1,0 +1,1558 @@
+/*
+HEADER STYLES
+*/
+
+.headerYPF-overlay {
+    display: block;
+    /* background: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/bg-login.jpg") no-repeat center center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    visibility: hidden;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF-overlay.open {
+    opacity: 1;
+    z-index: 5;
+    visibility: visible;
+}
+
+.headerYPF {
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(240,240,240,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    -moz-box-shadow: 0 4px 7px -5px #777;
+    -webkit-box-shadow: 0 4px 7px -5px #777;
+    box-shadow: 0 4px 7px -5px #777;
+    z-index: 1000;
+    color: #838383;
+    font-family: "din-medium";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.headerYPF a:hover {
+    color: #3a3939;
+}
+
+.headerYPF .contentheader {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.headerYPF.open {
+    top: 88px;
+}
+
+.headerYPF .container.relative {
+    position: relative;
+    z-index: -1;
+}
+
+.headerYPF a,
+.headerYPF li {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.headerYPF .site {
+    float: left;
+    /*width: 220px;*/
+    margin: 14px 0 0 0;
+}
+
+.headerYPF .logo {
+    width: 100px;
+    height: 28px;
+    float: left;
+    background-image: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/logo.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+}
+
+.headerYPF .subsite {
+    border-left: 1px solid #aaa;
+    color: #474747;
+    font-family: "din-regular";
+    font-size: 20px;
+    line-height: 22px;
+    margin: 3px 0 0 5px;
+    padding-left: 8px;
+    text-transform: uppercase;
+    float: left;
+    position: absolute;
+}
+
+.headerYPF .subsite span {
+    font-family: 'din-black'
+}
+
+.headerYPF .menu {
+    float: right;
+}
+
+.headerYPF .menu .principal {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    position: relative;
+
+}
+
+.headerYPF .no-link {
+    cursor: default;
+}
+
+.headerYPF .nivel1 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-right: 20px;
+    position: relative;
+}
+
+.headerYPF .nivel1 a.linkmenu {
+    border-top: 3px solid transparent;
+    color: #363636;
+    display: block;
+    font-family: "din-black";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.headerYPF .nivel1:hover a.linkmenu,
+.headerYPF .nivel1.active a.linkmenu {
+    border-top: 3px solid #0063be;
+    color: #0063be;
+}
+
+.headerYPF .submenu {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    right: -150px;
+    padding:  0 0 0 20px;
+    visibility: hidden;
+    opacity: .2;
+    z-index: 6;
+    -moz-box-shadow: inset 0 9px 10px -13px #777;
+    -webkit-box-shadow: inset 0 9px 10px -13px #777;
+    box-shadow: inset 0 9px 10px -13px #777;
+    background: #f0f0f0 url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/background-info.gif") repeat-y top right;
+}
+
+.headerYPF .nivel1:hover .submenu {
+    max-height: 700px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.headerYPF .submenu.left {
+    left: -200px;
+}
+
+.headerYPF .onecol.center {
+    right: -260px;
+}
+
+.headerYPF .twocol.center {
+    right: -370px;
+}
+
+.headerYPF .threecol.center {
+    right: -480px;
+}
+
+.headerYPF .onecol {
+    width: 523px;
+}
+
+.headerYPF .twocol {
+    width: 741px;
+}
+
+.headerYPF .threecol {
+    width: 960px;
+}
+
+.headerYPF .submenu .column {
+    width: 218px;
+    margin: 10px 0;
+    padding: 10px 20px 10px 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.headerYPF .submenu .fin-grupo {
+    margin-bottom: 19px;
+}
+
+.headerYPF ul li a {
+    display: block;
+    line-height: 19px;
+    font-size: 12px;
+    color: #787C88;
+}
+
+.headerYPF ul li a:hover,
+.headerYPF .nivel3 a:hover {
+    color: #005DA7;
+}
+
+.headerYPF .nivel2 a {
+    text-transform: uppercase;
+    color: #005DA7;
+}
+
+.headerYPF .nivel3 a {
+    color: #333;
+}
+
+.headerYPF .submenu .info {
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    text-align: center;
+    width: 305px;
+    background: #333;
+}
+
+.headerYPF .submenu .info strong {
+    color: #cfcfcf;
+    font-family: 'din-medium';
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    font-size: 12px;
+    display: block;
+}
+
+.headerYPF .submenu .info p {
+    line-height: 14px;
+    margin-top: 10px;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #cfcfcf;
+    font-family: 'din-medium';
+}
+
+.headerYPF .submenu .info img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navegacion secundaria */
+
+.headerYPF .secundaria{
+    margin-left: 5px;
+    display: inline-block;
+    float: right;
+}
+
+.headerYPF .secundaria li{
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; 
+}
+
+.headerYPF .secundaria li,
+.headerYPF .secundaria li a{
+    height: 55px;
+}
+
+.headerYPF .secundaria li a.ppal{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-left: 1px solid #cbcbcb;
+    /* color: black; */
+    color: #0060c3;
+    font-size: 14px!important;
+    font-family: "din-medium";
+    line-height: 55px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.headerYPF .secundaria li a.ppal span {
+    font-size: 12px;
+    font-family: "din-bold"!important;
+}
+.headerYPF .secundaria li a.last{
+    border-right: 1px solid #cbcbcb;
+}
+
+.headerYPF .icon a,
+.headerYPF .sitios-ypf a:hover,
+.headerYPF .sitios-ypf a.active{
+    background: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/icons.png") no-repeat;
+}
+
+.headerYPF .icon a{
+    width: 39px;
+}
+
+/* Iconos fijos siempre */
+
+.headerYPF .buscar a{
+    background-position: 0px 0px;
+}
+
+.headerYPF .buscar a:hover,
+.headerYPF .buscar a.active,
+.headerYPF .buscar a.open{
+    background-position: 0px -54px;
+}
+
+.headerYPF .lang a{
+    background-position: -160px 0px;
+}
+
+.headerYPF .lang a:hover,
+.headerYPF .lang a.active{
+    background-position: -160px -55px;
+}
+
+.headerYPF .login a{
+    background-position: -80px 0px;
+}
+
+.headerYPF .login a img {
+    margin-top: -3px;
+}
+
+.headerYPF .login a:hover,
+.headerYPF .login a.active,
+.headerYPF .login a.open{
+    background-position: -80px -54px;
+}
+
+.headerYPF .sitios-ypf a.ppal {
+    padding: 0 10px;
+}
+
+.headerYPF .sitios-ypf a.ppal:hover,
+.headerYPF .sitios-ypf a.ppal.active,
+.headerYPF .sitios-ypf a.ppal.open{
+    background-position: 0px -121px;
+}
+
+.headerYPF .sitios-ypf {
+    position: relative;
+}
+
+/* Iconos que pueden ser insertados o quitados desde SharePoint */
+
+.headerYPF .icon.dinamico a {
+    background-position: 0px 0px;
+}
+
+.headerYPF .icon.dinamico a:hover,
+.headerYPF .icon.dinamico a.active {
+    background-position: 0px -54px;
+}
+
+.headerYPF .sitioslist {
+    position: absolute;
+    background: #f0f0f0;
+    width: 300px;
+    max-height: 0;
+    opacity: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-box-shadow: inset 0 9px 10px -13px #777;
+    -webkit-box-shadow: inset 0 9px 10px -13px #777;
+    box-shadow: inset 0 9px 10px -13px #777;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF .sitioslist.open {
+    max-height: 800px;
+    opacity: 1;
+}
+
+.headerYPF .sitioslist .box {
+    width: auto;
+    padding: 0 15px;
+}
+
+.headerYPF .sitioslist .box ul {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.headerYPF .sitioslist .box ul li {
+    height: auto;
+    display: block;
+    float: none;
+}
+
+.headerYPF .sitioslist .box ul li a {
+    color: #151414;
+    font-size: 12px;
+    height: auto;
+    text-transform: uppercase;
+    font-family: "din-black";
+    display: block;
+    line-height: 28px;
+}
+
+.headerYPF .sitioslist .box ul li a:hover {
+    background: none;
+    color: #0060c3;
+}
+
+.headerYPF .sitioslist .box ul li a span {
+    background: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/icons-sitios-ypf.png") no-repeat scroll left -31px;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.headerYPF .sitioslist .info {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.headerYPF .sitioslist .info img {
+    display: block;
+    width: 100%;
+}
+
+.headerYPF .sitioslist .info strong {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 11px;
+    color: #0063be;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.headerYPF .buscador {
+    position: absolute;
+    background: #f4f4f4;
+    width: 100%;
+    top: -88px;
+    left: 0;
+    height: 88px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF .buscador.open {
+    opacity: 1;
+    z-index: 1;
+}
+
+.headerYPF .buscador .box {
+    width: 415px;
+    float: right;
+    position: relative;
+    margin: 25px 0 0 0;
+}
+
+.headerYPF .buscador .box input {
+    background: #fff;
+    border: solid 2px #dcdcdc;
+    display: block;
+    width: 100%;
+    color: #000;
+    text-indent: 15px;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+.headerYPF .buscador .box button {
+    position: absolute;
+    border: none;
+    width: 36px;
+    height: 34px;
+    padding: 0;
+    background: #fff url("./assets/head-foot/icon-buscador.png") center center no-repeat;
+    text-indent: -99999px;
+    right: 2px;
+    top: 2px;
+}
+
+.headerYPF .selectlang {
+    display: block;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 183px;
+    max-height: 0;
+    overflow: hidden;
+    background: #f4f4f4;
+    -moz-box-shadow: inset 0 9px 10px -13px #777;
+    -webkit-box-shadow: inset 0 9px 10px -13px #777;
+    box-shadow: inset 0 9px 10px -13px #777;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF .selectlang.open {
+    max-height: 600px;
+}
+
+.headerYPF .lang {
+    position: relative;
+}
+
+.headerYPF .selectlang .box {
+    width: auto;
+    margin: 15px;
+}
+
+.headerYPF .selectlang .box ul {
+    display: block;
+    width: auto;
+    padding: 0 0 10px 55px;
+    margin: 0;
+}
+
+.headerYPF .selectlang .box ul li {
+    text-align: left;
+    display: block;
+    float: none;
+    height: auto;
+}
+
+.headerYPF .selectlang .box ul li a {
+    border: none;
+    color: #666;
+    height: auto;
+    display: block;
+    font-family: "din-medium";
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: none;
+    width: auto;
+    background: none;
+    padding: 0;
+}
+
+.headerYPF .selectlang .box ul li a:hover {
+    color: #0063be;
+}
+
+.headerYPF .selectlang .box ul .pais {
+    color: #0063be;
+}
+
+.headerYPF .selectlang .bandera-pais {
+    color: #0063be;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.headerYPF .selectlang .box ul a.check {
+    background: url("./assets/head-foot/check-lang.png") right center no-repeat;
+}
+
+/**** LOGIN MODAL *******/
+
+#loginModal {
+    width: 230px;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px 40px;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -160px;
+    opacity: 0;
+    z-index: -2;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+
+#loginModal.open {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}
+
+#logedInfo {
+    width: 240px;
+    max-height: 0;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px 40px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: -15px;
+    margin: 0;
+    opacity: 0;
+    -moz-box-shadow: inset 0 11px 10px -13px #777;
+    -webkit-box-shadow: inset 0 11px 10px -13px #777;
+    box-shadow: inset 0 11px 10px -13px #777;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -2;
+}
+
+#logedInfo.open {
+    max-height: 700px;
+    opacity: 1;
+    z-index: 8;
+}
+
+.headerYPF .loginModal
+{
+    background: rgb(240, 240, 240); 
+    padding: 15px; 
+    padding-top: 24px;
+    width: 360px; 
+    right: 14.8%;
+    box-shadow: inset 0px 14px 12px -13px #999;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -5px;
+    /*display: none;*/
+}
+.headerYPF .loginModal.open {
+    opacity: 1;
+    z-index: 1;
+    /*display: block;*/
+}
+
+.headerYPF .displayloginModal{display: block;}
+
+.headerYPF .loginModal p {
+    color: #757575;
+    font-size: 13px;
+    font-family: "din-medium";
+    text-align: center;
+}
+
+.headerYPF .loginModal p.tl,
+.headerYPF .loginModal.tl p{
+    text-align: left;
+}
+
+.headerYPF .loginModal strong {
+    font-family: "din-black";
+    font-weight: 400;
+}
+
+.headerYPF .loginModal .btn-login-facebook {
+    background: url("./assets/fb-button.png") no-repeat scroll center center transparent;
+    display: block;
+    height: 37px;
+    margin: 10px auto;
+    overflow: hidden;
+    text-indent: -200em;
+    width: 150px;
+    border-left: none;
+}
+
+.headerYPF .loginModal p.line-through{
+    margin: 20px auto 14px;
+    position: relative;
+}
+
+.headerYPF .loginModal p.line-through:before {
+    background: none repeat scroll 0 0 #dcdcdc;
+    content: ".";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    text-indent: -200em;
+    top: 50%;
+    width: 100%;
+    z-index: 10;
+}
+
+.headerYPF .loginModal p.line-through span {
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    z-index: 20;
+}
+
+.headerYPF .loginModal .form-group {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.headerYPF .loginModal .form-group input[type="text"],
+.headerYPF .loginModal .form-group input[type="password"] {
+    border: 2px solid #dcdcdc;
+    color: #a2a2a2;
+    font-size: 13px;
+    font-family: "din-medium";
+    height: 35px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    padding: 0;
+    text-indent: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.headerYPF .loginModal .form-group input[type="checkbox"] {
+    float: left;
+}
+
+.headerYPF .loginModal .check {
+    float: left;
+}
+
+.headerYPF .loginModal hr {
+    border-top: 1px solid #dcdcdc;
+    margin: 10px 0;
+}
+
+.headerYPF .loginModal .form-bottom {
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.headerYPF .loginModal .form-bottom.nomarg {
+    padding: 0;
+    overflow: hidden;
+}
+
+.headerYPF .loginModal a.serv {
+    color: #999;
+    display: block;
+    padding: 5px 0 5px 25px;
+    clear: both;
+    background: url("./assets/head-foot/ic-serv.png") no-repeat left center;
+}
+
+.headerYPF .loginModal a.serv:hover {
+    color: #666;
+    background: url("./assets/head-foot/ic-serv-on.png") no-repeat left center;
+}
+
+.headerYPF .loginModal a.box {
+    color: #999;
+    display: block;
+    padding: 5px 0 5px 25px;
+    clear: both;
+    background: url("assets/ic-box.png") no-repeat left center;
+}
+
+.headerYPF .loginModal a.box:hover {
+    color: #666;
+    background: url("assets/ic-box-on.png") no-repeat left center;
+}
+
+.headerYPF .loginModal a.guia {
+    color: #999;
+    display: block;
+    padding: 5px 0 5px 25px;
+    clear: both;
+    background: url("assets/ic-guia.png") no-repeat left center;
+}
+
+.headerYPF .loginModal a.guia:hover {
+    color: #666;
+    background: url("assets/ic-guia-on.png") no-repeat left center;
+}
+
+.headerYPF .loginModal .btn {
+    color: #0063be;
+    background: #fff;
+    border: solid 2px #0063be;
+    font-family: "din-medium";
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    line-height: 35px; 
+    clear: both;
+    width: 100%;
+    margin: 15px 0 0 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.headerYPF .loginModal .btn:hover {
+    color: #fff;
+    background: #0063be;
+}
+
+.headerYPF .loginModal .btn.user {
+    color: #45c3d3;
+    border: solid 2px #45c3d3;
+}
+
+.headerYPF .loginModal .btn.user:hover {
+    color: #fff;
+    background: #45c3d3;
+}
+
+.headerYPF .loginModal .btn.close {
+    color: #999999;
+    border: none;
+}
+
+.headerYPF .loginModal .btn.close:hover {
+    color: #666;
+    background: none;
+}
+
+.headerYPF .loginModal .foto {
+    float: left;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.headerYPF .loginModal .foto img {
+    display: block;
+    width: 100%;
+}
+
+.headerYPF .loginModal .foto a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,99,190,0.4);
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.headerYPF .loginModal .datos {
+    float: left;
+    width: 140px;
+    height: auto;
+}
+
+.headerYPF .loginModal .upp {
+    text-transform: uppercase;
+}
+
+.headerYPF .loginModal .color {
+    color: #0063c5;
+}
+
+.headerYPF .loginModal a.person:hover {
+    color: #0063c5;
+}
+
+.headerYPF .loginModal .puntos {
+    display: block;
+    padding: 15px 0 0 0;
+}
+
+.headerYPF .fotousuario {
+    width: 28px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 4px;
+}
+
+.headerYPF .icon a .fotousuario {
+    margin-left: 6px;
+}
+
+/********************************************/
+
+/* RESPONSIVE */
+
+.headerYPF .hiden {
+    display: none;
+}
+
+.headerYPF .openmenu {
+    display: none;
+}
+
+.headerYPF .loginmob {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .headerYPF .submenu {
+        background-image: none;
+    }
+    .headerYPF .submenu .info {
+        display: none;
+    }
+    .headerYPF .submenu.left {
+        left: -200px;
+    }
+    .headerYPF .onecol.center {
+        right: -260px;
+    }
+    .headerYPF .twocol.center {
+        right: -370px;
+    }
+    .headerYPF .threecol.center {
+        right: -480px;
+    }
+    .headerYPF .nivel1:hover .submenu {
+        max-height: 500px;
+        opacity: 1;
+    }
+    .headerYPF .onecol {
+        width: 270px;
+    }
+    .headerYPF .twocol {
+        width: 490px;
+    }
+    .headerYPF .threecol {
+        width: 710px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .headerYPF .contentheader {
+        width: auto;
+        padding: 0 10px;
+    }
+    #logedInfo {
+        right: 10px;
+    }
+    .headerYPF .container.relative {
+        position: initial;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .headerYPF .site {
+        width: 93px;
+    }
+    .headerYPF .subsite {
+        display: none;
+    }
+}
+
+@media (max-width: 1060px) {
+    #logedInfo {
+        right: 50px;
+    }
+    .headerYPF-overflow {
+        overflow: hidden;
+    }
+    .headerYPF .hiden {
+        display: block;
+    }
+    .headerYPF .principal .disabled  {
+        display: none !important;
+    }
+    .headerYPF .openmenu {
+        display: block;
+        width: 44px;
+        height: 34px;
+        background: url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/open-menu.png") no-repeat center center;
+        float: right;
+        cursor: pointer;
+        z-index: 9;
+        position: absolute;
+        right: 10px;
+        margin: 10px 0 0 0;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .headerYPF .loginmob {
+        display: block;
+        position: absolute;
+        right: 55px;
+        top: 9px;
+    }
+    .headerYPF .loginmobile {
+        float: none;
+        display: block;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        background: rgb(240, 240, 240);        
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+    }
+    .headerYPF .loginmobile.open {
+        max-height: 250px;
+        bottom: 0;
+        overflow-y: auto;
+    }
+    .headerYPF .menu{
+        float: none;
+        display: block;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        background: #FFF;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+    }
+    .headerYPF .menu.open {
+        max-height: 1500px;
+        bottom: 0;
+        overflow-y: auto;
+    }
+    .headerYPF .menu .principal,
+    .headerYPF .secundaria {
+        display: block;
+        float: none;
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+    }
+    .headerYPF .nivel1,
+    .headerYPF .secundaria li {
+        display: block;
+        float: none;
+        position: relative;
+        margin: 0;
+        height: auto;
+    }
+    .headerYPF .icon.login {
+        display: none;
+    }
+    .headerYPF .nivel1 a.linkmenu,
+    .headerYPF .secundaria li a.ppal {
+        border-bottom: 1px solid #eee;
+        border-top: medium none;
+        border-left: none;
+        border-right: none;
+        color: #0063be;
+        display: block;
+        font-family: "din-black";
+        font-size: 14px!important;
+        font-weight: 400;
+        line-height: 50px;
+        background-image: none !important;
+        height: auto;
+        width: auto;
+        text-transform: uppercase;
+        margin: 0;
+        padding:0 15px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    .headerYPF .nivel1 a.linkmenu.active,
+    .headerYPF .secundaria li a.ppal.active {
+        background: #e3e2e2;
+    }
+    .headerYPF .secundaria li a.ppal {
+        position: relative;
+        z-index: 3;
+    }
+    .headerYPF .sitios-ypf a.ppal {
+        padding: 0 15px;
+    }
+    .headerYPF .sitios-ypf a.ppal:hover, 
+    .headerYPF .sitios-ypf a.ppal.active, 
+    .headerYPF .sitios-ypf a.ppal.open {
+        background: none;
+    }
+    .headerYPF .nivel1:hover a.linkmenu, 
+    .headerYPF .nivel1.active a.linkmenu,
+    .headerYPF li:hover a.ppal,
+    .headerYPF li a.ppal.active {
+        border-top: none;
+        color: #0063be;
+    }
+    .headerYPF .submenu {
+        box-shadow: none;
+        max-height: 0 !important;
+        opacity: 1;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        right: auto;
+        top: auto;
+        display: block;
+        float: none;
+        visibility: visible;
+        background: #fff;
+    }
+    .headerYPF .submenu.open {
+        max-height: 2200px !important;
+    }
+    .headerYPF .submenu .column {
+        float: none;
+        margin: 0 15px;
+        padding: 0;
+        width: auto;
+    }
+    .headerYPF .submenu.left {
+        left: auto;
+    }
+    .headerYPF .onecol.center,
+    .headerYPF .twocol.center,
+    .headerYPF .threecol.center {
+        right: auto;
+    }
+    .headerYPF .onecol,
+    .headerYPF .twocol,
+    .headerYPF .threecol {
+        width: auto;
+        background: #ececec;
+    }
+    .headerYPF .selectlang .box ul .pais {
+        color: #333;
+    }
+    .headerYPF.open {
+        top: 0;
+    }
+    .headerYPF .buscador {
+        position: relative;
+        top: auto;
+        height: 0;
+        background: #ececec;
+    }
+    .headerYPF .selectlang {
+        position: relative;
+        top: auto;
+        height: auto;
+        max-height: 0;
+        background: #ececec;
+    }
+    .headerYPF .buscador.open {
+        height: 88px;
+    }
+    .headerYPF .buscador .box {
+        float: none;
+        width: auto;
+    }
+    .headerYPF .buscador .box input {
+        width: 100%;
+    }
+    .headerYPF .selectlang.open {
+        max-height: 500px;
+    }
+    .headerYPF .selectlang .box {
+        float: none;
+        margin: 15px 0;
+        text-align: left;
+        width: auto;
+    }
+    .headerYPF .selectlang .box ul li a {
+        padding-left: 10px;
+    }
+    .headerYPF .selectlang .bandera-pais {
+        background-image: none !important;
+        padding-left: 0;
+    }
+    .headerYPF .selectlang .box ul {
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    .headerYPF .arrow {
+        background: transparent url("https://www.ypf.com/_layouts/YPF.Portals.HeaderFooter/css/assets/head-foot/dropdown_menu_arrows.png") no-repeat scroll center center;
+        float: right;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        cursor: pointer;
+        z-index: 3;
+        border-left: 1px solid #eee;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .headerYPF .arrow.open {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        border-bottom: 1px solid #eee;
+        border-left: none;
+    }
+    .headerYPF .submenu .fin-grupo {
+        margin-bottom: 0;
+    }
+    .headerYPF ul li a,
+    .headerYPF .selectlang .box ul li a {
+        border-bottom: 1px solid #dcdcdc;
+        color: #787c88;
+        display: block;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .headerYPF .selectlang {
+        display: block;
+        position: relative;
+        top: auto;
+        right: 0;
+        width: auto;
+        max-height: 0;
+        overflow: hidden;
+        background: #ececec;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .headerYPF .selectlang .box {
+        margin: 0;
+        padding: 0 15px;
+    }
+    .headerYPF .selectlang .bandera-pais {
+        background-image: none !important;
+    }
+    .headerYPF .selectlang .box ul a.check {
+        background: none;
+    }
+    .headerYPF .selectlang .box ul a {
+        padding-left: 20px;
+    }
+    .headerYPF .selectlang .box ul a.pais {
+        padding-left: 0;
+    }
+
+    .headerYPF .nivel3 a {
+        padding-left: 10px;
+    }
+    .headerYPF .nivel4 a {
+        padding-left: 20px;
+    }
+
+    .headerYPF .sitioslist {
+        width: auto;
+        position: relative;
+        box-shadow: none;
+        border: none;
+        background: #ececec;
+    }
+    .headerYPF .sitioslist .info {
+        display: none;
+    }
+    .headerYPF .sitioslist.open {
+        max-height: 1000px;
+    }
+    .headerYPF .sitioslist .box {
+        display: block;
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+    .headerYPF .sitioslist .box ul {
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    .headerYPF .sitioslist .box ul li {
+        text-align: left;
+    }
+
+}
+@media (max-width: 767px) {
+    .headerYPF-overflow-loged,
+    .headerYPF-overflow-logoff {
+        overflow: hidden;
+    }
+    .headerYPF .site {
+        margin-top: 17px;
+        /*width: 190px;*/
+    }
+    .headerYPF .logo {
+        width: 80px;
+        height: 22px;
+    }
+    .headerYPF .subsite {
+        font-size: 17px;
+        margin-top: 1px;
+    }
+    #logedInfo {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        top: 55px;
+        right: 0px;
+		padding: 0px;
+        margin: 0px;
+		z-index: -9;
+    }
+    #logedInfo.open {
+        max-height: none;
+        height: auto;
+        overflow-y: auto;
+        z-index: 10;
+    }
+    #logedInfo .userinfo {
+        overflow: hidden;
+        clear: both;
+        display: block;
+    }
+	#logedInfo .contenedor-userinfo {
+        margin: 20px 40px;
+    }
+    .headerYPF .loginModal p,
+    .headerYPF .loginModal .datos,
+    .headerYPF .loginModal .btn {
+        font-size: 15px;
+    }
+    #loginModal {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        top: 55px;
+        right: 0px;
+        left: 0px;
+        padding: 0px;
+        margin: 0px;
+        z-index: -9;
+    }
+    #loginModal.open {
+		max-height: none;
+        height: auto;
+        overflow-y: auto;
+        z-index: 6;
+    }
+	#loginModal .contenedor-login-form {
+        margin: 20px 40px;
+    }
+}
+/*BOTON CERRAR SESION*/
+.button-cerrar{
+  display:block !important;
+  width:250px !important;
+  height:13px !important;
+  padding:13px 0 !important;
+  margin:0 auto !important;
+  font:13px/1em 'Medium' !important;
+  text-align:center !important;
+  text-transform:uppercase !important;
+  border:3px solid #555555 !important;
+  color:#555555 !important;
+  margin-top:15px !important;
+  background:none !important;
+}
+.button-cerrar .icon{
+  display:inline-block;
+  width:20px;
+  height:15px;
+  margin-left:5px;
+  -webkit-transition:0.25s;
+  -moz-transition:0.25s;
+  -ms-transition:0.25s;
+  -o-transition:0.25s;
+  transition:0.25s;
+}
+#ServiclubLogin .button-cerrar.red{
+  border-color:#dd462c !important;
+  color:#dd462c !important;
+}
+.button-cerrar.red{
+  border-color:#0063be !important;
+  color:#0063be !important;
+}
+.button-cerrar.red .icon{
+  background:url('../images/icon_cart_red.png') center center no-repeat;
+}
+#ServiclubLogin .button-cerrar.red:hover{
+  color:#ffffff !important;
+  background-color:#dd462c !important;
+}
+.button-cerrar:hover{
+  color:#ffffff !important;
+  width:250px !important;
+}
+.button-cerrar:hover .icon{
+  background:url('../images/icon_cart_white.png') center center no-repeat;
+}
+.button-cerrar.red:hover{
+  color:#ffffff !important;
+  background-color:#0063be !important;
+}
+/*fin boton cerrar sesion*/
+
+.headerYPF .nivel2 .TituloSubmenuNivel2,
+.headerYPF .nivel3 .TituloSubmenuNivel2,
+.headerYPF .nivel4 .TituloSubmenuNivel2 {
+    font-weight: 400;   
+    font-family: 'din-bold';
+    color:#0063be;
+    margin-bottom: 6px;
+}
+.headerYPF .nivel3 .TituloSubmenuNivel2 {
+    color:black;
+    font-family: 'din-bold';
+}
+.headerYPF .nivel4 .TituloSubmenuNivel2 {
+    color:#787C88;
+    font-family: 'din-regular';
+}
+.headerYPF .nivel4 .TituloSubmenuNivel2:hover {
+    color: #222
+}
+
+
+
+/*Fixes*/
+
+nav.menu .linkmenu h2 {
+	text-transform:none;
+}
+
+
+.headerYPF .nivel1 a.linkmenu, .headerYPF h2
+{
+    /*border-top:none !important;*/
+    display: block;
+    font-family: "din-black";
+    color: black;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    line-height: 47px;
+
+}
+
+.headerYPF .nivel1 a.linkmenu, .headerYPF h2:hover, .headerYPF h3:hover, .headerYPF a:hover
+{
+	text-decoration:none !important;
+}
+
+.headerYPF .submenu h3{
+	font-size: 12px;
+}
+
+@media (max-width: 1060px)
+{
+	.headerYPF .nivel1 a.linkmenu, .headerYPF li a h2
+	{
+		line-height:40px;
+		
+		vertical-align:middle;
+		margin:0px;
+	}
+}
+
+
+/*Fixes*/

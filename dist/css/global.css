@@ -1,0 +1,187 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+
+http://html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+    resize:none;
+    outline:none;
+}
+li{list-style:none;}
+strong{
+    font-weight:bold;
+}
+
+
+/*CLEARFIX*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #808080;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #808080;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #808080;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #808080;
+}
+
+body {
+    font-family :'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/*
+ * Fonts
+*/
+@import url(http://fonts.googleapis.com/css?family=Andada);
+
+.andada {
+    font-family: 'Andada', serif;
+}
+
+@font-face {
+    font-family: 'din-regular';
+    src: url('fonts/DINRegular.eot');
+    src: url('fonts/DINRegular.eot') format('embedded-opentype'),
+         url('fonts/DINRegular.woff2') format('woff2'),
+         url('fonts/DINRegular.woff') format('woff'),
+         url('fonts/DINRegular.ttf') format('truetype'),
+         url('fonts/DINRegular.svg#DINRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-light';
+    src: url('fonts/DINLight.eot');
+    src: url('fonts/DINLight.eot') format('embedded-opentype'),
+         url('fonts/DINLight.woff2') format('woff2'),
+         url('fonts/DINLight.woff') format('woff'),
+         url('fonts/DINLight.ttf') format('truetype'),
+         url('fonts/DINLight.svg#DINLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-medium';
+    src: url('fonts/DINMedium.eot');
+    src: url('fonts/DINMedium.eot') format('embedded-opentype'),
+         url('fonts/DINMedium.woff2') format('woff2'),
+         url('fonts/DINMedium.woff') format('woff'),
+         url('fonts/DINMedium.ttf') format('truetype'),
+         url('fonts/DINMedium.svg#DINMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-bold';
+    src: url('fonts/DINBold.eot');
+    src: url('fonts/DINBold.eot') format('embedded-opentype'),
+         url('fonts/DINBold.woff2') format('woff2'),
+         url('fonts/DINBold.woff') format('woff'),
+         url('fonts/DINBold.ttf') format('truetype'),
+         url('fonts/DINBold.svg#DINBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-black';
+    src: url('fonts/DINBlack.eot');
+    src: url('fonts/DINBlack.eot') format('embedded-opentype'),
+         url('fonts/DINBlack.woff2') format('woff2'),
+         url('fonts/DINBlack.woff') format('woff'),
+         url('fonts/DINBlack.ttf') format('truetype'),
+         url('fonts/DINBlack.svg#DINBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body #s4-bodyContainer {
+    min-width: inherit   
+}
