@@ -1,0 +1,52 @@
+// Pseudo Elements
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin pseudo ($loc: before, $content: '', $pos: absolute) {
+    position:relative;
+
+    &::#{$loc} {
+        content: $content;
+        position: $pos;
+        @content;
+    }
+}
+
+
+// Clear Fix and List Reset
+
+    %clearfix {
+        &:after {
+        content: '';
+        display: table;
+        clear: both;
+        }
+    }
+
+    %listreset {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+// Transitions
+
+    @mixin transition($args...) {
+        -webkit-transition: $args;
+        -moz-transition: $args;
+        -ms-transition: $args;
+        -o-transition: $args;
+        transition: $args;
+    }
+
+// Transform
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    -moz-transform: $args;
+    -ms-transform: $args;
+    -o-transform: $args;
+    transform: $args;
+}

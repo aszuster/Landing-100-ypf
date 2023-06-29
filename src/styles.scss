@@ -1,0 +1,25 @@
+// abstracts
+@import "abstracts/breakpoints";
+@import "abstracts/mixins";
+@import "abstracts/colors";
+@import "abstracts/fonts";
+@import "abstracts/index";
+
+//design
+@import "components/header";
+@import "components/buttons";
+@import "components/typography";
+@import "components/layout";
+@import "components/hero";
+@import "components/modal";
+@import "components/box";
+@import "components/bajada";
+@import "components/video";
+@import "components/slider-inscripcion";
+@import "components/como-llegar";
+@import "components/como-llegar-maps";
+@import "components/agenda";
+@import "components/disfrutar";
+@import "components/informacion-general";
+@import "components/nos-cuidamos";
+@import "components/prefooter";

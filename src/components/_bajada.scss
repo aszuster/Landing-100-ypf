@@ -1,0 +1,50 @@
+.bajada {
+    width: 282px;
+    border-bottom: 1px solid $light-grey;
+    h2 {
+        color: $darker-grey;
+        margin-bottom: 20px;
+    }
+    span {
+        display: block;
+        height: 2px;
+        background: linear-gradient(to right,#E7757A,#EA507E, #2670D3);
+        width: 180px;
+    }
+    &.hero-bajada {
+        h2 {
+            color: $brand-primary;
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+        }
+    }
+    @include bp-large {
+        &.hero-bajada {
+            span {
+                &:before {
+                    content: "";
+                    height: 1px;
+                    width: 300px;
+                    background-color: $light-grey;
+                    display: inline-block;
+                    vertical-align: middle;
+                    left: -300px;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+        }
+        h2 {
+            margin-bottom: 32px;
+        }
+        &.bajada-como-llegar {
+            h2 {
+                font-size: 40px;
+                line-height: 44px;
+            }
+        }
+    }
+}

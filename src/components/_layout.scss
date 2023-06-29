@@ -1,0 +1,21 @@
+body {
+    padding-top: 55px;
+}
+.only-desktop {
+    display: none;
+}
+.hr-degradee {
+    margin: 0 0 60px 0;
+    height: 2px;
+    background: linear-gradient(to right, #2670D3,#EA507E,#E7757A);
+    border: 0;
+}
+
+@include bp-medium {
+    .only-desktop {
+        display: block;
+    }
+    .only-mobile {
+        display: none;
+    }
+}

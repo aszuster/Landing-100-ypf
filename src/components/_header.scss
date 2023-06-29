@@ -1,0 +1,11 @@
+.logoNegro {
+    position: relative;
+    left: 16px;
+    top: -3px;
+    img {
+        max-width: 67px;
+    }
+    @include bp-medium {
+        top: 0;
+    }
+}

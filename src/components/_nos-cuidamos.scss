@@ -1,0 +1,55 @@
+.nos-cuidamos {
+    overflow: hidden;
+    position: relative;
+    &:before {
+        content: "";
+        height: 200px;
+        background-color: #FAFAFA;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    .owl-stage-outer {
+        overflow: visible;
+        position: relative;
+        z-index: 12;
+    }
+    .bajada {
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 11;
+    }
+}
+.owl-nos-cuidamos {
+    position: relative;
+    left: -37px;
+    z-index: 99;
+    @include bp-medium {
+        left: 0;
+    }
+}
+.noscuidamos__content {
+    border-radius: 8px;
+    border: 1px solid #E1E5EC;
+    background: white;
+    display: flex;
+    padding: 32px 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    div {
+        text-align: center;
+    }
+    img {
+        max-width: 112px;
+        margin: 0 auto 24px auto;
+    }
+    p {
+        color: #212121;
+        font-family: $secondary-font;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

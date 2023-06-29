@@ -1,0 +1,21 @@
+@mixin bp-xxlarge {
+  @media only screen and (min-width: 1300px) {
+    @content;
+  }
+}
+@mixin bp-xlarge {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin bp-large {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin bp-medium {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }

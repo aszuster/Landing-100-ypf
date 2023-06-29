@@ -1,0 +1,171 @@
+.agenda {
+    padding: 56px 0;
+    .agenda-desktop {
+        display: none;
+        position: relative;
+    }
+    @include bp-medium {
+        display: flex;
+        align-items: center;
+        .agenda-col--left,
+        .agenda-col--right {
+            width: 50%;
+        }
+        .agenda-mobile {
+            display: none;
+        }
+        .agenda-desktop {
+            display: block;
+        }
+    }
+    @include bp-xlarge {
+        padding: 148px 0;
+    }
+}
+.agenda-col--left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    img.agendaImg {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+    @include bp-medium {
+        &:before {
+            content: "";
+            background: linear-gradient(to left, #785DB0,#B44F96, #E84480);
+            display: block;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 0 20px 20px 0;
+        }
+        img.agendaImg {
+            margin: 20px 0;
+            position: relative;
+            left: -40px;
+        }
+    }
+    @include bp-large {
+        img.agendaImg {
+            margin: 50px 0;
+            left: 0;
+        }
+    }
+}
+.agenda-col--right {
+    padding: 16px;
+    position: relative;
+    @include bp-large {
+        padding-left: 100px;
+        &:after {
+            content: "";
+            background: linear-gradient(to left, #785DB0,#B44F96, #E84480);
+            display: block;
+            width: 48px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+        &:before {
+            content: "";
+            background: url("../images/agenda/cafegris.svg") no-repeat center center;
+            height: 73px;
+            width: 63px;
+            display: block;
+            position: absolute;
+            top: -160px;
+            left: 20px;
+        }
+    }
+    @include bp-xlarge {
+        padding-left: 127px;
+    }
+}
+.agenda--list {
+    padding-left: 22px;
+    margin: 40px 0 0 0;
+    li {
+        margin-bottom: 24px;
+        position: relative;
+        &:before {
+            content: "•";
+            font-weight: bolder;
+            border-radius: 100px;
+            color: $brand-primary;
+            position: absolute;
+            left: -23px;
+            top: -1px;
+        }
+    }
+    b {
+        font-family: $secondary-font;
+        display: block;
+        margin-bottom: 10px;
+    }
+    @include bp-large {
+        font-size: 20px;
+    }
+}
+
+.agenda-ico {
+    position: absolute;
+    z-index: 100;
+
+    &.estrella {
+        left: 5%;
+        top: 30%;
+        width: 60px;
+    }
+    &.planta {
+        right: 20%;
+        top: 20%;
+        width: 80px;
+    }
+    &.cafe {
+        bottom: -5%;
+        left: 40%;
+        width: 60px;
+    }
+    &.estrellagris {
+        right: 15%;
+        top: 10%;
+        width: 106px;
+    }
+    @include bp-large {
+        &.estrella {
+            left: 34px;
+            top: 163px;
+            width: 115px;
+        }
+        &.planta {
+            right: 70px;
+            top: 73px;
+            width: 175px;
+        }
+        &.cafe {
+            bottom: -30px;
+            left: 40%;
+            width: 115px;
+        }
+    }
+
+    @include bp-xlarge {
+        &.estrella {
+            left: 34px;
+            top: 210px;
+        }
+        &.planta {
+            right: 170px;
+            top: 120px;
+        }
+        &.cafe {
+            bottom: 20px;
+        }
+    }
+}

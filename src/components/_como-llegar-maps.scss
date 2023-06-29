@@ -1,0 +1,203 @@
+.como-llegar__maps {
+    overflow: hidden;
+}
+.como-llegar__maps.desktop {
+    display: none;
+    overflow: hidden;
+}
+@include bp-large {
+    .como-llegar__maps.desktop {
+        display: block;
+        margin-top: -40px;
+        position: relative;
+        padding: 0 0 100px 0;
+        .container {
+            display: flex;
+
+            position: relative;
+            z-index: 10;
+        }
+
+        &:before {
+            content: "";
+            background: url("../images/como-llegar/triangulo.svg") no-repeat;
+            display: block;
+            width: 305px;
+            height: 300px;
+            position: absolute;
+            background-size: cover;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            background: url("../images/como-llegar/circulo.svg") no-repeat center center;
+            display: block;
+            width: 403px;
+            height: 403px;
+            background-size: contain;
+            position: absolute;
+            bottom: 0;
+            left: -90px;
+            z-index: 1;
+        }
+    }
+    .como-llegar__maps.mobile {
+        display: none;
+    }
+}
+
+
+.tabs {
+    display: flex;
+    padding: 15px 11px 32px 11px;
+    button {
+        width: 50%;
+        border: 0;
+        border-bottom: 1px solid #E1E5EC;
+        background: transparent;
+        padding: 16px;
+        color: #616161;
+        &.activeTab {
+            border-bottom: 2px solid $brand-primary;
+            color: $brand-primary;
+
+        }
+    }
+}
+
+// SLIDER
+
+.owl-como-llegar__content {
+    padding: 20px;
+    background-color: #FAFAFA;
+    div {
+        background-color: white;
+        border-radius: 8px;
+        padding: 32px;
+        span, p {
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-family: $secondary-font;
+            display: block;
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+        }
+        @include bp-large {
+            padding: 20px;
+        }
+        @include bp-xlarge {
+            padding: 32px;
+        }
+    }
+}
+
+
+
+.slider-counter-box {
+
+    text-align: center;
+    margin: 24px 0 40px 0;
+    color: black;
+    font-weight: 600;
+    .slider-counter,
+    .slider-counter-vehicular {
+        &:before {
+            content: '0';
+        }
+    }
+    .cantidad {
+        margin-right: 44px;
+        color: black;
+        span.barra {
+            color: $brand-primary;
+            display: inline-block;
+            margin: 0 6px 0 9px;
+        }
+        span.numeros {
+            opacity: .2;
+        }
+    }
+    .slider-counter,
+    .owl-nav {
+        display: inline-block;
+    }
+    .owl-nav {
+        margin-left: 20px;
+        position: relative;
+        top: -2px;
+    }
+    .owl-nav.disabled {
+        display: none!important;
+    }
+    .owl-prev,
+    .owl-next {
+        background-color: transparent;
+        border: 0;
+        width: 26px;
+        padding: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .owl-prev {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        position: relative;
+        top: 3px;
+        margin-right: 24px;
+    }
+    .disabled {
+        opacity: .2;
+        filter: grayscale(100%);    
+    }
+}
+
+.como-llegar__col--left {
+    width: 31%;
+    background-color: #FAFAFA;
+}
+.como-llegar__col--right {
+    width: 69%;
+    line-height: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+    img {
+        width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.relative {
+    position: relative;
+    .button {
+        z-index: 9;
+        position: relative;
+    }
+}
+.forImage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    &:hover {
+
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    }
+}

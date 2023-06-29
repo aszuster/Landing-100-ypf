@@ -1,0 +1,62 @@
+
+.como-llegar__second {
+    text-align: center;
+    .link {
+        display: inline-block;
+        text-align: center;
+        margin: 5px 0 25px 0;
+        line-height: 24px;
+        @include bp-medium {
+            margin: 0 0 15px 0;
+        }
+    }
+}
+.icon-check {
+    &:before {
+        content: url("../images/icons/check.svg");
+        display: block;
+        margin-bottom: 12px;
+    }
+    @include bp-medium {
+        position: relative;
+        padding-left: 40px;
+        margin: 0;
+        &:before {
+            content: url("../images/icons/check.svg");
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@include bp-medium {
+    .como-llegar {
+        display: flex;
+        align-items: center;
+        .como-llegar__first {
+            width: 70%;
+            padding-right: 20px;
+            @include bp-xlarge {
+                padding-right: 0;
+                width: 68%;
+            }
+        }
+        .como-llegar__second {
+            width: 30%;
+            @include bp-xlarge {
+                width: 32%;
+                text-align: right;
+                .button {
+                    display: inline-block;
+                    margin: 0;
+                    vertical-align: middle;
+                }
+                .link {
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+}

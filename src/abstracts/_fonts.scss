@@ -1,0 +1,19 @@
+$primary-font    : 'din-regular';
+$secondary-font  : 'din-bold';
+$font-medium     : 'din-medium';
+
+
+$black    : 900;
+$bold     : 700;
+$semibold : 600;
+$regular  : 400;
+$light    : 300;
+
+
+// Font Size REM
+
+$font-size: 16px;
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($font-size)}rem;
+}
